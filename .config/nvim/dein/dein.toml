@@ -4,3 +4,8 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'vim-jp/vimdoc-ja'
 
+[[plugins]]
+repo = 'wadackel/vim-dogrun'
+hook_add = '''
+	colorscheme dogrun
+'''
