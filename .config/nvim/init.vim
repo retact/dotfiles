@@ -23,3 +23,11 @@ set smartcase
 set hlsearch
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 set  incsearch
+
+"confatable
+set smartindent
+set showmatch
+set virtualedit=onemore
+set listchars=tab:--> ,trail:- ,
+set history=10000
+
