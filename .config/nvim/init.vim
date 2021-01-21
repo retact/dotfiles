@@ -1,10 +1,8 @@
 "mainsetting"
-set fenc=utf-8
 set nobackup
 set noswapfile
 set hidden
 set showcmd
-set encoding=utf-8
 set fileencodings=iso-2022-jp,euc-j,sjis,utf-8
 set fileformats=unix,dos,mac
 set clipboard+=unnamed
@@ -36,5 +34,9 @@ inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 inoremap <silent> jj <Esc>
+
+"paste mode
+autocmd InsertLeave * set nopaste
+nnoremap cp :set paste<CR>
 
 
