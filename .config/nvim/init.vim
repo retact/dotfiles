@@ -28,6 +28,13 @@ set  incsearch
 set smartindent
 set showmatch
 set virtualedit=onemore
-set listchars=tab:--> ,trail:- ,
 set history=10000
+
+"insertmode setting"
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+inoremap <silent> jj <Esc>
+
 
