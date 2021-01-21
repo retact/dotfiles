@@ -16,3 +16,10 @@ set tabstop=2
 set shiftwidth=2
 set smartindent
 set laststatus=2
+
+"serching"
+set ignorecase
+set smartcase
+set hlsearch
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
+set  incsearch
