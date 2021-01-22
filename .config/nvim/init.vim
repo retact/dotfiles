@@ -41,13 +41,15 @@ nnoremap cp :set paste<CR>
 
 "--------------dein configration--------------
 if &compatible
-  set nocompatible               " Be iMproved
+  set nocompatible
 endif
 
 " Reset augroup "
 augroup MyAutoCmd
   autocmd!
 augroup END
+
+let g:python3_host_prog ='/usr/bin/python3'
 
 let s:config_home	= empty($XDG_CONFIG_HOME) ? expand('~/.config') : $XDG_CONFIG_HOME
 let s:cache_home	= empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
