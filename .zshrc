@@ -49,10 +49,9 @@ if [[ ! -n $TMUX && $- == *l* ]]; then
   fi
 fi
 
-# Learge and small
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-
 # completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*:default' menu select=1
 
 
