@@ -35,6 +35,10 @@ repo = 'vim-airline/vim-airline-themes'
 [[plugins]]
 repo = 'Yggdroot/indentLine'
 
+# neosnippet defines
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
 # ----------------dark powered----------------------
 # deoplete
 repo = 'Shougo/deoplete.nvim'
