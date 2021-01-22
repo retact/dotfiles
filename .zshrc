@@ -48,3 +48,11 @@ if [[ ! -n $TMUX && $- == *l* ]]; then
     :  # Start terminal normally
   fi
 fi
+
+# Learge and small
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+# completion
+zstyle ':completion:*:default' menu select=1
+
+
