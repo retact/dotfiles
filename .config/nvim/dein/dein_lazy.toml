@@ -1,0 +1,5 @@
+
+# parentheses
+[[plugins]]
+repo = 'cohama/lexima.vim'
+
