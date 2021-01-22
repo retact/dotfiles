@@ -8,16 +8,9 @@ repo = 'cohama/lexima.vim'
 repo = 'Shougo/neosnippet'
 on_ft = ['snippet']
 depends = ['neosnippet-snippets']
-
-
-[[plugins]]
-repo = 'autozimu/LanguageClient-neovim'
-rev = 'next'
-build = 'zsh install.sh'
 hook_add = '''
-source ~/.config/nvim/plugins/LCnvim.rc.vim
+source ~/.config/nvim/plugins/neosnippet.rc.vim
 '''
-
 #----------Rust lang-------------
 [[plugins]]
 repo = 'rust-lang/rust.vim'

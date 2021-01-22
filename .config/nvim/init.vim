@@ -44,12 +44,14 @@ if &compatible
   set nocompatible
 endif
 
+"let g:python3_host_prog ='/usr/local/bin/python3'
+"let g:python_host_prog ='/usr/bin/python'
+
 " Reset augroup "
 augroup MyAutoCmd
   autocmd!
 augroup END
 
-let g:python3_host_prog ='/usr/bin/python3'
 
 let s:config_home	= empty($XDG_CONFIG_HOME) ? expand('~/.config') : $XDG_CONFIG_HOME
 let s:cache_home	= empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
