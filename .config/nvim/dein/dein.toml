@@ -2,6 +2,11 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+# jp help
+[[plugins]]
 repo = 'vim-jp/vimdoc-ja'
 
 # color setting
@@ -10,18 +15,18 @@ repo = 'wadackel/vim-dogrun'
 hook_add = '''
 	colorscheme dogrun
 '''
-# status setting
+
+# status 
 [[plugins]]
 repo = 'vim-airline/vim-airline'
 hook_add = '''
 	let g:airline#extensions#tabline#enabled = 1
 	let g:airline#extensions#tabline#buffer_idx_mode = 1
-	let g:airline_theme = 'minimalist'
+  let g:airline_theme = 'minimalist'
   nmap <C-o> <Plug>AirlineSelectPrevTab
 	nmap <C-p> <Plug>AirlineSelectNextTab
 '''
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
-
 
