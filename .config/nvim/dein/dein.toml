@@ -35,8 +35,17 @@ repo = 'vim-airline/vim-airline-themes'
 [[plugins]]
 repo = 'Yggdroot/indentLine'
 
-#deoplete
+# ----------------dark powered----------------------
+# deoplete
 repo = 'Shougo/deoplete.nvim'
 on_event = 'InsertEnter'
+
+# denite
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+
+[[plugins]]
+repo = 'Shougo/deoppet.nvim'
+#---------------------------------------------------
 
 
