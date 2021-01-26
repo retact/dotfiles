@@ -55,6 +55,7 @@ if [[ ! -n $TMUX && $- == *l* ]]; then
 fi
 
 # completion
+autoload -Uz compinit && compinit
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 setopt auto_param_keys
