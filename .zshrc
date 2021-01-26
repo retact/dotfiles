@@ -2,6 +2,11 @@
 autoload -Uz colors
 colors
 
+# cd setting
+function chpwd() { 
+  ls -a 
+}
+
 # git branch method
 function prompt-branch {
   local branch_name st branch_status
@@ -28,7 +33,7 @@ function prompt-branch {
   echo "${branch_status} Git $branch_name"
 }
 
-PROMPT='%B%K{057} %c %n %k%K{008} %D{%T} %k'`prompt-branch`' %k%F{057} >>> %b%f '
+PROMPT='%B%K{057} %c @%n %k%K{008} %D{%T} %k'`prompt-branch`' %k%F{057} >>> %b%f '
 
 # auto start tmux
 if [[ ! -n $TMUX && $- == *l* ]]; then
@@ -50,8 +55,7 @@ if [[ ! -n $TMUX && $- == *l* ]]; then
 fi
 
 # completion
-autoload -Uz compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*:default' menu select=1
-
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+setopt auto_param_keys
 
