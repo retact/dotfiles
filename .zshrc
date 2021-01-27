@@ -7,6 +7,9 @@ function chpwd() {
   ls -a 
 }
 
+# path
+export PATH="/usr/local/bin:$PATH"
+
 # git branch method
 function prompt-branch {
   local branch_name st branch_status
