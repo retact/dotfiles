@@ -7,11 +7,11 @@ let g:LanguageClient_serverCommands = {
         \ 'python': ['/usr/local/bin/pyls'],
         \ }
 
-"augroup LanguageClient_config
-"  autocmd!
-"  autocmd User LanguageClientStarted setlocal signcolumn=yes
-"  autocmd User LanguageClientStopped setlocal signcolumn=auto
-"augroup END
+augroup LanguageClient_config
+  autocmd!
+  autocmd User LanguageClientStarted setlocal signcolumn=yes
+  autocmd User LanguageClientStopped setlocal signcolumn=auto
+augroup END
 
 nnoremap <silent> <Space>lh :call LanguageClient_textDocument_hover()<CR>
 nnoremap <silent> <Space>ld :call LanguageClient_textDocument_definition()<CR>
