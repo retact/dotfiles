@@ -9,7 +9,46 @@ build = 'make'
 [[plugins]]
 repo = 'vim-jp/vimdoc-ja'
 
-# status 
+# neosnippet defines
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+# indent
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+# -------------- dark powered ---------------
+
+# deoplete
+repo = 'Shougo/deoplete.nvim'
+on_event = 'InsertEnter'
+depends = 'context_filetype.vim'
+hook_add = '''
+  let g:deoplete#enable_at_startup = 1
+'''
+
+# denite
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+
+# deoppet
+[[plugins]]
+repo = 'Shougo/deoppet.nvim'
+
+# --------------- color setting --------------
+
+[[plugins]]
+repo = 'wadackel/vim-dogrun'
+hook_add = '''
+	colorscheme dogrun
+'''
+
+# ---------------- status -----------------
+
+# airline
 [[plugins]]
 repo = 'vim-airline/vim-airline'
 depends = 'vim-airline-themes'
@@ -24,45 +63,17 @@ hook_add = '''
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
-# indent
-[[plugins]]
-repo = 'Yggdroot/indentLine'
+# ---------------- LSP ----------------------
 
+# LanguageClient
 [[plugins]]
 repo = 'autozimu/LanguageClient-neovim'
-# rev = 'next'
-build = 'bash install.sh'
+rev = 'next'
+build = 'zsh install.sh'
 hook_add = '''
-source ~/.config/nvim/plugins/LCnvim.rc.vim
+  source ~/.config/nvim/plugins/LCnvim.rc.vim
 '''
-
-# neosnippet defines
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
+# ------------------------------------------
 
 [[plugins]]
-repo = 'Shougo/context_filetype.vim'
-
-# ----------------dark powered----------------------
-# deoplete
-repo = 'Shougo/deoplete.nvim'
-on_event = 'InsertEnter'
-depends = 'context_filetype.vim'
-hook_source = '''
-let g:deoplete#enable_at_startup = 1
-'''
-
-# denite
-[[plugins]]
-repo = 'Shougo/denite.nvim'
-
-[[plugins]]
-repo = 'Shougo/deoppet.nvim'
-#---------------------------------------------------
-
-# color setting
-[[plugins]]
-repo = 'wadackel/vim-dogrun'
-hook_add = '''
-	colorscheme dogrun
-'''
+repo = 'prabirshrestha/async.vim'
