@@ -2,7 +2,8 @@ set hidden
 " settings for languages
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_serverCommands = {
-        \ 'cpp': ['clangd'],
+        \ 'c': ['/usr/local/Cellar/llvm/11.0.0_1/bin/clangd'],
+        \ 'cpp': ['/usr/local/Cellar/llvm/11.0.0_1/bin/clangd'],
         \ 'rust': ['~/.cargo/bin/rustup','run','stable','rls'],
         \ 'python': ['/usr/local/bin/pyls'],
         \ }
