@@ -7,7 +7,7 @@ function chpwd() {
   ls -a 
 }
 
-# path
+#path
 export PATH="/usr/local/bin:$PATH"
 
 # git branch method
@@ -63,3 +63,4 @@ zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 setopt auto_param_keys
 
+export PATH="/usr/local/opt/llvm/bin:$PATH"
