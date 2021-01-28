@@ -44,13 +44,11 @@ if &compatible
   set nocompatible
 endif
 
-"let g:python3_host_prog ='/usr/local/bin/python3'
-"let g:python_host_prog ='/usr/bin/python'
 
 " Reset augroup "
-augroup MyAutoCmd
-  autocmd!
-augroup END
+"augroup MyAutoCmd
+"  autocmd!
+"augroup END
 
 
 let s:config_home	= empty($XDG_CONFIG_HOME) ? expand('~/.config') : $XDG_CONFIG_HOME
@@ -77,9 +75,10 @@ endif
 " Auto delete ddein plugins "
 let s:removed_plugins = dein#check_clean()
 if len(s:removed_plugins) > 0
-    call map(s:removed_plugins, "delete(v:val, 'rf')")
-    call dein#recache_runtimepath()
+   call map(s:removed_plugins, "delete(v:val, 'rf')")
+  call dein#recache_runtimepath()
 endif
 "----------------------------------------------
 filetype plugin indent on
 syntax enable
+let g:tex_flavor = "latex"
