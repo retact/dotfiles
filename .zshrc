@@ -66,4 +66,4 @@ setopt auto_param_keys
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/usr/local/texlive/2020basic/bin/x86_64-darwin:$PATH"
 export PATH="/usr/local/opt/qemu/bin:$PATH"
-
+export PATH="/usr/local/Cellar/dosfstools/4.2/sbin:$PATH"
