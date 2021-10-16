@@ -4,5 +4,5 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/retact/dotfiles/main/ins
 ```
 or
 ```
-bash -c "$(wget -fsSL https://raw.githubusercontent.com/retact/dotfiles/main/install.sh)"
+bash -c "$(wget -qO - https://raw.githubusercontent.com/retact/dotfiles/main/install.sh)"
 ```
